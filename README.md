@@ -27,7 +27,8 @@ Overview on the JN pipeline:
 4) **Push Results back to OMERO by adding metadata and additional informations**
 
 Furthermore, it will be show how to process can be automatized by the execution of
-automatic loops throught the OMERO datase.
+automatic loops throught the OMERO datase. Most of the pre and post-processing step 
+were created by taking inspiration from the [Bio-image Analysis Notebooks](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html)
 
 ## Course Preparation and checklist
 
