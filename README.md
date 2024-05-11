@@ -28,7 +28,8 @@ Overview on the JN pipeline:
 
 Furthermore, it will be show how to process can be automatized by the execution of
 automatic loops throught the OMERO datase. Most of the pre and post-processing step 
-were created by taking inspiration from the [Bio-image Analysis Notebooks](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html)
+were created by taking inspiration from the [Bio-image Analysis Notebooks](https://haesleinhuepf.github.io/BioImageAnalysisNotebooks/intro.html).
+We thanks Robert Haase for creating this material.
 
 ## Course Preparation and checklist
 
@@ -40,32 +41,43 @@ You can 1) connect to your institutional instance, 2) [run OMERO.server and OMER
 use temporary OMERO account prepare by Müster University which can be accessed and used the day of the course. 
 More information regarding these accounts will be give the day of the course. 
 
+### IMPORTANT - Installing omero-py
+Please, start to create your environment by installing omero-py in python 3.8 using the
+command:
+
+`conda create -n myenv -c conda-forge python=3.8 omero-py`
+
+you can then install the other packages into this environment
+
 ### Run the Jupyter Notebook
 Jupyter is open-source software and service for interactive computing.
 
 We suggest to install the conda environment before the course and
-run JN locally on your personal computer. However, there is also the option to 
-run the JN on the 
-[**Helmholtz Cloud Service**](https://helmholtz.cloud/services/?serviceDetails=jupyter-desy&serviceID=955f806d-9936-4fa2-993b-e0e1abd483db):
+run JN locally on your personal computer.
 
-- The DESY hosted [Jupyter service](https://jupyter.desy.de/hub/login) allows users to start JupyterLab notebooks. 
-On request, users can include additional Jupyter Server environments as Docker images.
+Optionally, you can also use the service **GoogleColab**. Please, install your conda environment with omero-py writing the following command:
 
-However, we cannot promise that the service will be working the day of the course.
+````
+ pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp310-cp310-manylinux_2_28_x86_64.whl 
+ pip install omero-py==5.19.1 
+````
+
+Install then all the other packages. 
 
 
 
 ### Setup the conda environment
-- You can set-up your environment using the **py_pipeline.yml** **_before the course_**. In case of problems, please contact the organizators.
+- You can set-up your environment using the **py_pipeline.yml** or **env.yml** **_before the course_**. In case of problems, please contact the organizators.
 
 
 ### Examplary dataset for the present course...
 
-Exercise data are part of the SBS Bioimage CNT image set provided by Ilya Ravkin and 
-available from the Broad Bioimage Benchmark Collection. For details and biological 
-background see https://www.broadinstitute.org/bbbc/BBBC014/. Images can be downloaded at 
-this [link](https://data.broadinstitute.org/bbbc/BBBC014/BBBC014_v1_images.zip). 
-**Data need to uploaded into your OMERO instance before the exercise.**
+We used image set BBBC014v1 provided by Ilya Ravkin, available from the Broad Bioimage Benchmark Collection [Ljosa et al., Nature Methods, 2012].
+For details and biological 
+background see https://www.broadinstitute.org/bbbc/BBBC014/. Images can be founded in this repository at
+01_data/HCS_data.zip.
+**Data need to uploaded into your OMERO instance before the exercise. Otherwise, data will
+be already uploaded in the prepared server**
 
 #### ..or bring your own data :)
 In case you have your own data and want to perform a basic nuclei segmentation, your 

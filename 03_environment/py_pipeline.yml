@@ -110,7 +110,7 @@ dependencies:
       - defusedxml==0.7.1
       - exceptiongroup==1.2.1
       - executing==2.0.1
-      - ezomero==3.0.0
+      - ezomero==2.1.0
       - fastjsonschema==2.19.1
       - fonttools==4.51.0
       - fqdn==1.5.1
