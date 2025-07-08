@@ -41,13 +41,9 @@ You can 1) connect to your institutional instance, 2) [run OMERO.server and OMER
 use temporary OMERO account prepare by Müster University which can be accessed and used the day of the course. 
 More information regarding these accounts will be give the day of the course. 
 
-### IMPORTANT - Installing omero-py
-Please, start to create your environment by installing omero-py in python 3.8 using the
-command:
-
-`conda create -n myenv -c conda-forge python=3.8 omero-py`
-
-you can then install the other packages into this environment
+### IMPORTANT - Installing ezomero
+Please, follow the instruction on the [ezomero GitHub repository](https://github.com/TheJacksonLaboratory/ezomero) to install ezomero.
+All other libraries can be found in requirements.txt
 
 ### Run the Jupyter Notebook
 Jupyter is open-source software and service for interactive computing.
@@ -55,20 +51,12 @@ Jupyter is open-source software and service for interactive computing.
 We suggest to install the conda environment before the course and
 run JN locally on your personal computer.
 
-Optionally, you can also use the service **GoogleColab**. Please, install your conda environment with omero-py writing the following command:
+Optionally, you can also use the service **GoogleColab**. Please, install your conda environment with omero-py writing the following command (in case of Python 3.10):
 
 ````
  pip install https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp310-cp310-manylinux_2_28_x86_64.whl 
- pip install omero-py==5.19.1 
+ pip install ezomero
 ````
-
-Install then all the other packages. 
-
-
-
-### Setup the conda environment
-- You can set-up your environment using the **py_pipeline.yml** or **env.yml** **_before the course_**. In case of problems, please contact the organizators.
-
 
 ### Examplary dataset for the present course...
 
